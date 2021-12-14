@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="request.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="stu_name" id="name" placeholder="Eg.Mg Mg" required>
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="stu_email" id="email" required>
+        <br><br>
+
+        <label for="password">Email</label>
+        <input type="password" name="stu_email" id="password" required>
+        <br><br>
+
+        <label for="Phone">Email</label>
+        <input type="number" name="stu_phone" id="phone" value="09542123347" readonly>
+        <br><br>
+
+        <label for="Passport">Passport</label>
+        <input type="file" name="image/" id="stupassport" id="passport">
+        <br><br>
+        <label for="">Gender</label> <br>
+        <input type="radio" name="gender" value="male" ><label for="male">Male</label>
+        <input type="radio" name="gender" value="female" ><label for="female">Female</label>
+        <input type="radio" name="gender" value="other" ><label for="other">Other</label>
+        <br><br>
+
+        <label for="">Hobby</label> <br>
+        <input type="checkbox" name="travelling" value="travelling" ><label for="travelling">travelling</label>
+        <input type="checkbox" name="moving" value="moving" ><label for="moving">moving</label>
+        <input type="checkbox" name="gaming" value="gaming" ><label for="gaming">gaming</label>
+        <br><br>
+        <label for="address">Address</label>
+        <textarea name="stu_address" id="address" cols="30" rows="10"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
