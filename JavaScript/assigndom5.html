@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellspacing="0" cellpadding="20">
+     
+        
+            <form action=" ">
+                <label for="number">No</label>
+                <input type="number" name="number" id="number">
+            </form>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Age</th>
+               
+            </tr>
+        <tbody id = "tbody">
+
+        </tbody>
+        </table>
+        <br><br>
+        <button onclick="show()">Show</button>
+    
+    <script>
+ 
+        function show() {
+
+          let num = document.querySelector('#num');
+
+          let nummber = num.value;
+
+            let data = [
+                {num:'1',name:'Mg Mg', age : '54'},
+                {num:'2',name:'Aung Aung', age : '53'},
+                {num:'3',name:'Hla Hla', age : '52'},
+                {num:'4',name:'Mya Mya', age : '51'},
+                {num:'5',name:'Mg Ba', age : '51'}
+            ];
+            console.log(data);
+
+           
+            let tbody = document.querySelector('#tbody');
+            let myData = '';
+         
+
+            for (let value of data){
+                myData += `<tr>
+                        <td>${value.num}</td>
+                        <td>${value.name}</td>
+                        <td>${value.age}</td>
+                    </tr>`
+            }
+            console.log(myData);
+            tbody.innerHTML = myData;
+            document.querySelector('#num').value = result;
+        }
+    </script>
+</body>
+</html>

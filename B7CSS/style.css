@@ -1,0 +1,199 @@
+h1{
+    color: green;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*universal selector*/
+*{
+    /*color: red;*/ /*text*/ 
+    /*color: #b3b01d;*/ /*hex*/
+    /*color:rgb(9, 10, 71);*/
+}
+
+/*tag or element selector*/
+/*div{
+    color: green;
+    word-spacing: 40px;
+    width: 70%;
+}*/
+/*attribute selector*/
+a[target = "_blank"]{
+    color: red;
+    text-decoration: none;
+}
+/*Id selector*/
+#idselector{
+    color: blue;
+    text-indent: 50px;
+    word-spacing: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+/*class selector*/
+.classselector{
+    color: green;
+    letter-spacing: 20px;
+    line-height: 30px;
+}
+/*descendent selector*/
+.desc{
+    color: yellow;
+}
+/*child selector*/
+.child>a{
+    color: green;
+}
+/*pseudo selector*/
+a:link{
+    color: red;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: yellow;
+    letter-spacing: 40px;
+}
+a:visited{
+    color: brown;
+}
+/*target*/
+/*div:target{
+    border: 1px solid black;
+}*/
+p:target{
+    border: 1px solid red;
+}
+/*border*/
+.borderone{
+    border: 1px dashed #f00;
+}
+.bordertwo{
+    border-top: 5px double #0F0;
+}
+.borderstyle{
+    /*border-style : solid dotted double groove;*/
+    /*T/R/B/L*/
+    /*T/L&R/B*/
+    /*border-style:double dashed;*/
+    /*T&B / L&R*/
+    border-style: double;
+}
+.borderwidth{
+    border-width: 5px;
+    border-style: solid;
+}
+/*margin*/
+.margin{
+    border: 1px solid red;
+    margin: 40px;
+}
+.marginmix{
+    border: 1px solid black;
+    margin-left: 60px;
+}
+
+/*Padding*/
+.padding{
+    /*padding : 40px*/
+    padding: 50px 0px 0px 50px;
+    border: 1px solid black;
+}
+
+/*Layout*/
+.inline{
+    border: 1px solid red;
+    width: 400px;
+    display: inline-block;
+}
+.block{
+    border: 1px solid green;
+    width: 400px;
+    height: 80px;
+    display: inline-block;
+}
+/*Float*/
+div.float_left img{
+    width: 40%;
+    float: left;
+}
+.clear{
+    clear: both;
+}
+div.float_right img{
+    width: 40%;
+    float: right;
+}
+/*Grid*/
+div.gridone div,div.gridtwo div,div.gridthree div,div.gridfour div,div.gridfive div,div.gridsix div{
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+div.gridone,div.gridtwo,div.gridthree,div.gridfour,div.gridfive,div.gridsix{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+div.gridtwo{
+    grid-column-gap: 40px;
+}
+div.gridthree{
+    grid-row-gap: 30px;
+}
+div.gridfour{
+    grid-gap: 40px;
+}
+div.gridaddcolumn{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+div.gridaddrow{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+/*Position*/
+.relativeparent{
+    border: 1px solid black;
+    width: 1000px;
+    height: 600px;
+}
+.relative{
+    border: 1px solid red;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 80px;
+    left: 190px;
+}
+.absoluteparent{
+    border: 1px solid black;
+    width: 1000px;
+    height: 600px;
+}
+.absolute{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    border: 1px solid yellow;
+    width: 500px;
+    height: 300px;
+}
+.fixed{
+    position: fixed;
+    top: 50px;
+    left: 1000px;
+}
+
+/*font*/
+.online{
+    font-family: 'Dancing Script', cursive;
+}
+
+@font-face{
+    src:url(Dancing_Script/static/DancingScript-Medium.ttf);
+    font-family:Dancing_Script ;
+}
+.offline{
+    font-family: Dancing_Script;
+}
